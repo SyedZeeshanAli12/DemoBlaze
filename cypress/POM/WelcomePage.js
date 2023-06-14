@@ -1,0 +1,35 @@
+class WelcomePage{
+    movecarouselforward(){ 
+       cy.get('.carousel-control-next-icon')
+        .click()
+    }
+    movecarouselbackward(){
+        cy.get('.carousel-control-prev-icon')
+        .click()
+    }
+    carouselindicator(){
+        cy.get('.carousel-control-prev-icon')
+        .click()
+    }
+    NextPage(){
+        cy.get('#next2')
+        .click()
+    }
+    PreviousPage(){
+        cy.get('#prev2')
+        .click()
+    }
+    PCcategory(){
+        cy.get('[onclick="byCat(\'monitor\')"]')
+        .click()
+    }
+    PhoneCategory(){
+        cy.get('[onclick="byCat(\'phone\')"]')
+        .click()
+    }
+    LaptopCategory(){
+        cy.get('[onclick="byCat(\'notebook\')"]')
+        .click()
+    }
+}
+export default WelcomePage
