@@ -17,10 +17,8 @@ const welcomepage = new WelcomePage()
 //   })
 // })
 
-describe('Welcome page test', () => {
-  beforeEach(()=>{
-    cy.login('zeeshan ali', 'shan532029')
-  })
+
+
   it('Welcome Page', () => {
     cy.loginSession;
     cy.wait(1000)
@@ -40,5 +38,4 @@ describe('Welcome page test', () => {
     cy.wait(2000)
     welcomepage.PCcategory()
     cy.wait(2000)
-})
 })
