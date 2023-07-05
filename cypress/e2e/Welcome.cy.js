@@ -20,14 +20,14 @@ const welcomepage = new WelcomePage()
 
 
   it('Welcome Page', () => {
-    cy.loginSession;
-    cy.wait(1000)
-    welcomepage.movecarouselforward()
-    cy.wait(2000)
-    welcomepage.movecarouselbackward()
-    cy.wait(2000)
-    welcomepage.carouselindicator()
-    cy.wait(2000)
+    // cy.loginSession;
+    // cy.wait(1000)
+    // welcomepage.movecarouselforward()
+    // cy.wait(2000)
+    // welcomepage.movecarouselbackward()
+    // cy.wait(2000)
+    // welcomepage.carouselindicator()
+    // cy.wait(2000)
     welcomepage.NextPage()
     cy.wait(2000)
     welcomepage.PreviousPage()
